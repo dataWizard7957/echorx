@@ -1,0 +1,60 @@
+{
+  "patients": [
+    "patient_id",
+    "display_name",
+    "age",
+    "zip",
+    "language",
+    "has_car",
+    "mobility",
+    "neighborhood",
+    "home_lat",
+    "home_lng"
+  ],
+  "pharmacy_fills": [
+    "fill_id",
+    "patient_id",
+    "drug",
+    "strength",
+    "directions",
+    "fill_date",
+    "days_supply",
+    "pharmacy"
+  ],
+  "visit_history": [
+    "visit_id",
+    "patient_id",
+    "visit_date",
+    "site",
+    "reason",
+    "med_changes"
+  ],
+  "van_stops": [
+    "stop_id",
+    "van_id",
+    "site_name",
+    "area",
+    "zip",
+    "lat",
+    "lng",
+    "weekday",
+    "start_time",
+    "end_time",
+    "languages"
+  ],
+  "clinic_slots": [
+    "slot_id",
+    "stop_id",
+    "start_time",
+    "capacity",
+    "booked"
+  ],
+  "triage_policy": [
+    "rule_id",
+    "category",
+    "trigger",
+    "action",
+    "escalate_to",
+    "notes"
+  ]
+}

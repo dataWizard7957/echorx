@@ -1,0 +1,81 @@
+-- EchoRx: register the synthetic care data in Zetaris.
+-- Generated into zetaris/register.sql by `npm run zetaris:sql` (fills in {{DATA_BASE_URL}}).
+-- Run with `npm run zetaris:register`, or paste ONE statement at a time into the Zetaris SQL Editor.
+-- Pattern: same as Zetaris getting-started recipe 02_pokeapi_create.sql
+-- (REST table over a JSON object with a `data` array, flattened by a SchemaStore view).
+
+CREATE LIGHTNING DATABASE ECHORX_REST DESCRIBE BY "EchoRx synthetic care data REST source";
+
+CREATE SCHEMASTORE CONTAINER echorx;
+
+CREATE LIGHTNING REST TABLE patients_raw FROM ECHORX_REST REQUEST(
+    endpoint "{{DATA_BASE_URL}}/patients.json",
+    method "get",
+    response_type "json",
+    http_encoding "URLENCODED"
+) HEADER (
+) BODY ();
+
+CREATE SCHEMASTORE VIEW patients WITH CONTAINER echorx AS
+SELECT r.patient_id AS patient_id, r.display_name AS display_name, r.age AS age, r.zip AS zip, r.language AS language, r.has_car AS has_car, r.mobility AS mobility, r.neighborhood AS neighborhood, r.home_lat AS home_lat, r.home_lng AS home_lng
+FROM echorx_rest.patients_raw LATERAL VIEW explode(data) AS r;
+
+CREATE LIGHTNING REST TABLE pharmacy_fills_raw FROM ECHORX_REST REQUEST(
+    endpoint "{{DATA_BASE_URL}}/pharmacy_fills.json",
+    method "get",
+    response_type "json",
+    http_encoding "URLENCODED"
+) HEADER (
+) BODY ();
+
+CREATE SCHEMASTORE VIEW pharmacy_fills WITH CONTAINER echorx AS
+SELECT r.fill_id AS fill_id, r.patient_id AS patient_id, r.drug AS drug, r.strength AS strength, r.directions AS directions, r.fill_date AS fill_date, r.days_supply AS days_supply, r.pharmacy AS pharmacy
+FROM echorx_rest.pharmacy_fills_raw LATERAL VIEW explode(data) AS r;
+
+CREATE LIGHTNING REST TABLE visit_history_raw FROM ECHORX_REST REQUEST(
+    endpoint "{{DATA_BASE_URL}}/visit_history.json",
+    method "get",
+    response_type "json",
+    http_encoding "URLENCODED"
+) HEADER (
+) BODY ();
+
+CREATE SCHEMASTORE VIEW visit_history WITH CONTAINER echorx AS
+SELECT r.visit_id AS visit_id, r.patient_id AS patient_id, r.visit_date AS visit_date, r.site AS site, r.reason AS reason, r.med_changes AS med_changes
+FROM echorx_rest.visit_history_raw LATERAL VIEW explode(data) AS r;
+
+CREATE LIGHTNING REST TABLE van_stops_raw FROM ECHORX_REST REQUEST(
+    endpoint "{{DATA_BASE_URL}}/van_stops.json",
+    method "get",
+    response_type "json",
+    http_encoding "URLENCODED"
+) HEADER (
+) BODY ();
+
+CREATE SCHEMASTORE VIEW van_stops WITH CONTAINER echorx AS
+SELECT r.stop_id AS stop_id, r.van_id AS van_id, r.site_name AS site_name, r.area AS area, r.zip AS zip, r.lat AS lat, r.lng AS lng, r.weekday AS weekday, r.start_time AS start_time, r.end_time AS end_time, r.languages AS languages
+FROM echorx_rest.van_stops_raw LATERAL VIEW explode(data) AS r;
+
+CREATE LIGHTNING REST TABLE clinic_slots_raw FROM ECHORX_REST REQUEST(
+    endpoint "{{DATA_BASE_URL}}/clinic_slots.json",
+    method "get",
+    response_type "json",
+    http_encoding "URLENCODED"
+) HEADER (
+) BODY ();
+
+CREATE SCHEMASTORE VIEW clinic_slots WITH CONTAINER echorx AS
+SELECT r.slot_id AS slot_id, r.stop_id AS stop_id, r.start_time AS start_time, r.capacity AS capacity, r.booked AS booked
+FROM echorx_rest.clinic_slots_raw LATERAL VIEW explode(data) AS r;
+
+CREATE LIGHTNING REST TABLE triage_policy_raw FROM ECHORX_REST REQUEST(
+    endpoint "{{DATA_BASE_URL}}/triage_policy.json",
+    method "get",
+    response_type "json",
+    http_encoding "URLENCODED"
+) HEADER (
+) BODY ();
+
+CREATE SCHEMASTORE VIEW triage_policy WITH CONTAINER echorx AS
+SELECT r.rule_id AS rule_id, r.category AS category, r.trigger AS trigger, r.action AS action, r.escalate_to AS escalate_to, r.notes AS notes
+FROM echorx_rest.triage_policy_raw LATERAL VIEW explode(data) AS r;

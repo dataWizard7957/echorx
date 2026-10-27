@@ -1,0 +1,410 @@
+{
+  "data": [
+    {
+      "slot_id": "SL-001",
+      "stop_id": "VS-01",
+      "start_time": "09:00",
+      "capacity": 2,
+      "booked": 2
+    },
+    {
+      "slot_id": "SL-002",
+      "stop_id": "VS-01",
+      "start_time": "09:30",
+      "capacity": 2,
+      "booked": 2
+    },
+    {
+      "slot_id": "SL-003",
+      "stop_id": "VS-01",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-004",
+      "stop_id": "VS-01",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-005",
+      "stop_id": "VS-01",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-006",
+      "stop_id": "VS-01",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-007",
+      "stop_id": "VS-01",
+      "start_time": "12:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-008",
+      "stop_id": "VS-01",
+      "start_time": "12:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-009",
+      "stop_id": "VS-02",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-010",
+      "stop_id": "VS-02",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-011",
+      "stop_id": "VS-02",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-012",
+      "stop_id": "VS-02",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-013",
+      "stop_id": "VS-02",
+      "start_time": "12:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-014",
+      "stop_id": "VS-02",
+      "start_time": "12:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-015",
+      "stop_id": "VS-02",
+      "start_time": "13:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-016",
+      "stop_id": "VS-02",
+      "start_time": "13:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-017",
+      "stop_id": "VS-03",
+      "start_time": "09:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-018",
+      "stop_id": "VS-03",
+      "start_time": "09:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-019",
+      "stop_id": "VS-03",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-020",
+      "stop_id": "VS-03",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-021",
+      "stop_id": "VS-03",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-022",
+      "stop_id": "VS-03",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-023",
+      "stop_id": "VS-04",
+      "start_time": "09:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-024",
+      "stop_id": "VS-04",
+      "start_time": "09:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-025",
+      "stop_id": "VS-04",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-026",
+      "stop_id": "VS-04",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-027",
+      "stop_id": "VS-04",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-028",
+      "stop_id": "VS-04",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-029",
+      "stop_id": "VS-04",
+      "start_time": "12:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-030",
+      "stop_id": "VS-04",
+      "start_time": "12:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-031",
+      "stop_id": "VS-05",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-032",
+      "stop_id": "VS-05",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-033",
+      "stop_id": "VS-05",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-034",
+      "stop_id": "VS-05",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-035",
+      "stop_id": "VS-05",
+      "start_time": "12:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-036",
+      "stop_id": "VS-05",
+      "start_time": "12:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-037",
+      "stop_id": "VS-05",
+      "start_time": "13:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-038",
+      "stop_id": "VS-05",
+      "start_time": "13:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-039",
+      "stop_id": "VS-06",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-040",
+      "stop_id": "VS-06",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-041",
+      "stop_id": "VS-06",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-042",
+      "stop_id": "VS-06",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-043",
+      "stop_id": "VS-06",
+      "start_time": "12:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-044",
+      "stop_id": "VS-06",
+      "start_time": "12:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-045",
+      "stop_id": "VS-06",
+      "start_time": "13:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-046",
+      "stop_id": "VS-06",
+      "start_time": "13:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-047",
+      "stop_id": "VS-07",
+      "start_time": "09:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-048",
+      "stop_id": "VS-07",
+      "start_time": "09:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-049",
+      "stop_id": "VS-07",
+      "start_time": "10:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-050",
+      "stop_id": "VS-07",
+      "start_time": "10:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-051",
+      "stop_id": "VS-07",
+      "start_time": "11:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-052",
+      "stop_id": "VS-07",
+      "start_time": "11:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-053",
+      "stop_id": "VS-08",
+      "start_time": "13:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-054",
+      "stop_id": "VS-08",
+      "start_time": "13:30",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-055",
+      "stop_id": "VS-08",
+      "start_time": "14:00",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-056",
+      "stop_id": "VS-08",
+      "start_time": "14:30",
+      "capacity": 2,
+      "booked": 1
+    },
+    {
+      "slot_id": "SL-057",
+      "stop_id": "VS-08",
+      "start_time": "15:00",
+      "capacity": 2,
+      "booked": 0
+    },
+    {
+      "slot_id": "SL-058",
+      "stop_id": "VS-08",
+      "start_time": "15:30",
+      "capacity": 2,
+      "booked": 0
+    }
+  ]
+}

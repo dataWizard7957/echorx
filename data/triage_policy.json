@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "rule_id": "RF-01",
+      "category": "red_flag",
+      "trigger": "chest pain, pressure or tightness",
+      "action": "show Call 911 now and stop intake",
+      "escalate_to": "emergency",
+      "notes": "Deterministic rule, checked before any model call"
+    },
+    {
+      "rule_id": "RF-02",
+      "category": "red_flag",
+      "trigger": "trouble breathing or shortness of breath",
+      "action": "show Call 911 now and stop intake",
+      "escalate_to": "emergency",
+      "notes": ""
+    },
+    {
+      "rule_id": "RF-03",
+      "category": "red_flag",
+      "trigger": "stroke signs: face drooping, arm weakness, slurred speech",
+      "action": "show Call 911 now and stop intake",
+      "escalate_to": "emergency",
+      "notes": ""
+    },
+    {
+      "rule_id": "RF-04",
+      "category": "red_flag",
+      "trigger": "severe or uncontrolled bleeding",
+      "action": "show Call 911 now and stop intake",
+      "escalate_to": "emergency",
+      "notes": ""
+    },
+    {
+      "rule_id": "RF-05",
+      "category": "red_flag",
+      "trigger": "fainting or passing out",
+      "action": "show Call 911 now and stop intake",
+      "escalate_to": "emergency",
+      "notes": ""
+    },
+    {
+      "rule_id": "RF-06",
+      "category": "red_flag",
+      "trigger": "thoughts of self-harm or suicide",
+      "action": "show Call 911 now (or 988) and stop intake",
+      "escalate_to": "emergency",
+      "notes": ""
+    },
+    {
+      "rule_id": "POL-DOSE",
+      "category": "medication",
+      "trigger": "strength on bottle or patient report differs from the latest pharmacy fill",
+      "action": "escalate to nurse before the visit",
+      "escalate_to": "nurse",
+      "notes": "EchoRx never decides which dose is correct"
+    },
+    {
+      "rule_id": "POL-REFILL",
+      "category": "medication",
+      "trigger": "refill overdue by more than 14 days",
+      "action": "flag for pharmacist and mention in summary",
+      "escalate_to": "pharmacist",
+      "notes": ""
+    },
+    {
+      "rule_id": "POL-NOREC",
+      "category": "medication",
+      "trigger": "patient reports a medicine with no pharmacy fill on record",
+      "action": "list as patient-reported, flag for pharmacist",
+      "escalate_to": "pharmacist",
+      "notes": "Often over-the-counter or filled elsewhere"
+    },
+    {
+      "rule_id": "POL-NOTAKE",
+      "category": "medication",
+      "trigger": "pharmacy fill on record but patient does not mention it",
+      "action": "ask the patient once; if still unclear, flag for nurse",
+      "escalate_to": "nurse",
+      "notes": ""
+    },
+    {
+      "rule_id": "POL-WALK",
+      "category": "scheduling",
+      "trigger": "patient has no car or reports mobility issues",
+      "action": "prefer a stop within 0.5 miles; never more than 1.5 miles",
+      "escalate_to": "scheduler",
+      "notes": ""
+    },
+    {
+      "rule_id": "POL-LANG",
+      "category": "scheduling",
+      "trigger": "patient prefers a language other than English",
+      "action": "prefer a stop whose crew speaks that language",
+      "escalate_to": "scheduler",
+      "notes": ""
+    }
+  ]
+}

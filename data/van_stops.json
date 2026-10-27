@@ -1,0 +1,108 @@
+{
+  "data": [
+    {
+      "stop_id": "VS-01",
+      "van_id": "Van 3",
+      "site_name": "Hamtramck Public Library lot",
+      "area": "Hamtramck",
+      "zip": "48212",
+      "lat": 42.3972,
+      "lng": -83.0549,
+      "weekday": "Tue",
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "languages": "bn,en"
+    },
+    {
+      "stop_id": "VS-02",
+      "van_id": "Van 3",
+      "site_name": "Joseph Campau & Holbrook",
+      "area": "Hamtramck",
+      "zip": "48212",
+      "lat": 42.4048,
+      "lng": -83.0596,
+      "weekday": "Thu",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "languages": "bn,ar,en"
+    },
+    {
+      "stop_id": "VS-03",
+      "van_id": "Van 1",
+      "site_name": "Conant Gardens Community Center",
+      "area": "Detroit NE",
+      "zip": "48212",
+      "lat": 42.4207,
+      "lng": -83.061,
+      "weekday": "Wed",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "languages": "en"
+    },
+    {
+      "stop_id": "VS-04",
+      "van_id": "Van 4",
+      "site_name": "Arab American National Museum lot",
+      "area": "Dearborn",
+      "zip": "48126",
+      "lat": 42.3222,
+      "lng": -83.1762,
+      "weekday": "Mon",
+      "start_time": "09:00",
+      "end_time": "13:00",
+      "languages": "ar,en"
+    },
+    {
+      "stop_id": "VS-05",
+      "van_id": "Van 4",
+      "site_name": "Warren Ave & Schaefer",
+      "area": "Dearborn",
+      "zip": "48126",
+      "lat": 42.3433,
+      "lng": -83.1714,
+      "weekday": "Fri",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "languages": "ar,en"
+    },
+    {
+      "stop_id": "VS-06",
+      "van_id": "Van 2",
+      "site_name": "Clark Park",
+      "area": "Southwest Detroit",
+      "zip": "48209",
+      "lat": 42.3254,
+      "lng": -83.0905,
+      "weekday": "Tue",
+      "start_time": "10:00",
+      "end_time": "14:00",
+      "languages": "es,en"
+    },
+    {
+      "stop_id": "VS-07",
+      "van_id": "Van 2",
+      "site_name": "Vernor Hwy & Livernois",
+      "area": "Southwest Detroit",
+      "zip": "48209",
+      "lat": 42.3203,
+      "lng": -83.1032,
+      "weekday": "Sat",
+      "start_time": "09:00",
+      "end_time": "12:00",
+      "languages": "es,en"
+    },
+    {
+      "stop_id": "VS-08",
+      "van_id": "Van 5",
+      "site_name": "Eastside Senior Center",
+      "area": "East English Village",
+      "zip": "48205",
+      "lat": 42.4278,
+      "lng": -82.9625,
+      "weekday": "Wed",
+      "start_time": "13:00",
+      "end_time": "16:00",
+      "languages": "en"
+    }
+  ]
+}
