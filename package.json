@@ -1,0 +1,37 @@
+{
+  "name": "echorx",
+  "version": "1.0.0",
+  "description": "EchoRx - Say it once. Every caregiver hears it. A multi-agent care-intake system for mobile medical vans.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "build": "tsx scripts/build-web.ts",
+    "start": "tsx server/index.ts",
+    "demo": "tsx scripts/build-web.ts && tsx server/index.ts",
+    "test": "tsx scripts/run-tests.ts",
+    "test:hmem": "tsx scripts/test-hmem.ts",
+    "check": "tsx scripts/check-setup.ts",
+    "typecheck": "tsc --noEmit",
+    "zetaris:sql": "tsx scripts/build-register-sql.ts",
+    "zetaris:register": "tsx scripts/register-zetaris.ts",
+    "reset": "tsx scripts/reset.ts"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

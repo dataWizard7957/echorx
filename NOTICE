@@ -1,0 +1,22 @@
+EchoRx
+Copyright (c) 2026 the EchoRx team. Licensed under the MIT License (see LICENSE).
+
+This product includes software from the Meterless project:
+
+  Meterless H-MEM reference implementation
+  https://github.com/Meterless/Meterless/tree/main/engines/hmem/reference
+  Vendored into server/hmem/engine/ (unchanged apart from an attribution header).
+
+  Meterless H-MEM conformance suite (runner.ts, vectors.json)
+  https://github.com/Meterless/Meterless/tree/main/engines/hmem/conformance
+  Vendored into tests/hmem-conformance/ (only change: default implementation path).
+
+  Licensed under the Apache License, Version 2.0. A copy of the license is in
+  server/hmem/LICENSE-APACHE-2.0.txt.
+
+The Zetaris registration SQL follows the pattern of the Zetaris getting-started
+recipe open_data/rest_apis/sql/non_rate_limited/02_pokeapi_create.sql
+(https://github.com/zetaris/getting-started).
+
+All patient, pharmacy, visit, van-stop and policy data in data/ is synthetic,
+created for this prototype, and released under CC0.

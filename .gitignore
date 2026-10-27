@@ -1,0 +1,10 @@
+node_modules/
+web/dist/
+var/
+var-test/
+var-live-test/
+.env
+.env.local
+zetaris/register.sql
+*.log
+.DS_Store
