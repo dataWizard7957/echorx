@@ -2,7 +2,8 @@
 
 **Say it once. Every caregiver hears it.**
 
-EchoRx is a multi-agent care-intake system for Detroit's mobile medical vans. A patient tells their story once, on their phone and in their own language, before the van arrives. A team of agents then checks it against pharmacy and visit records in **Zetaris**, has a critic look for gaps, escalates anything uncertain to a nurse, **remembers the nurse's decision with Meterless H-MEM**, and books a van stop the patient can walk to. Every model call goes through **Meterless Nightshift** to **NVIDIA Nemotron**.
+EchoRx is a multi-agent care-intake system for Detroit's mobile medical vans.
+A patient tells their story once, on their phone and in their own language, before the van arrives. A team of agents then checks it against pharmacy and visit records in **Zetaris**, has a critic look for gaps, escalates anything uncertain to a nurse, **remembers the nurse's decision with Meterless H-MEM**, and books a van stop the patient can walk to. Every model call goes through **Meterless Nightshift** to **NVIDIA Nemotron**.
 
 > Open Agent Hackathon 2026 · **Track 3: Reasoning Architecture** · built during the build window.
 > All data is synthetic. EchoRx never diagnoses, suggests treatment or judges a dose.
