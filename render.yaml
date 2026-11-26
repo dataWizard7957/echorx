@@ -1,0 +1,16 @@
+# Render Blueprint: EchoRx live demo on the free plan, in SAMPLE_MODE.
+# Synthetic patients from data/*.json and scripted agent replies; no Zetaris,
+# Nightshift or API keys needed. Cases reset on every restart.
+services:
+  - type: web
+    name: echorx
+    runtime: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: SAMPLE_MODE
+        value: "true"
